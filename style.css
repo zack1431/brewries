@@ -1,0 +1,76 @@
+body {
+    background-color: #F7E9DC;
+    min-height: 100vh;
+    font-family:monospace;
+  }
+  .newcss{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+      gap: 15px;
+    }
+    .search-box{
+        width: 40%;
+        margin:30px auto;
+    }
+    .search-input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border:none;
+        padding-left: 10px;
+        outline: none;
+    }
+    .search-input:focus,.search-input:hover{
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .search-input::placeholder {
+        text-align: left;
+        font-weight: bold;
+    }
+    .card-content{
+        background-color: rgb(49, 0, 0);;
+        padding: 20px;
+        text-align: left;
+        border-radius: 10px;
+        width: 350px;
+        cursor: pointer;
+    }
+    .card-content:hover{
+      box-shadow: rgba(75, 3, 3, 0.5) 0px 10px 36px 0px, rgba(75, 3, 3, 0.06) 0px 0px 0px 1px;
+    }
+    .info{
+        font-weight: 500;
+        font-size: 15px;
+        white-space: normal;
+        color: #F7E9DC;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #F7E9DC;
+        font-weight: bold;
+    }
+    b{ 
+        color: #F7E9DC;
+    }
+    h3{
+        color: #F7E9DC;
+    }
+    @media (max-width:768px) {
+    .search-box {width:70%}
+    .newcss{
+       grid-template-columns: auto auto;
+    }
+  }
+    @media (max-width:430px) {
+    .search-box {width:70%}
+    .newcss{
+      grid-template-columns:  auto;
+    }
+    .card-content{
+        width: 280px;
+    }
+   }
